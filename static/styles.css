@@ -5,7 +5,7 @@
 
 .theme-btn {
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
     width: 40px;
     height: 40px;
@@ -15,4 +15,14 @@
     z-index: 1000;
     background-color: white;
     border-radius: 50%;
+}
+
+#layer-control {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
 }

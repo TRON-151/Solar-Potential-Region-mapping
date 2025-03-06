@@ -10,7 +10,14 @@
 <body>
     <div id="map"></div>
     <button id="theme-toggle" class="theme-btn"></button>
+    <div id="layer-control" class="leaflet-control-layers">
+        <!-- <input type="checkbox" id="buildings" checked> All Buildings<br> -->
+        <input type="checkbox" id="potential" checked> Solar Potential Areas<br>
+        <input type="checkbox" id="existing" checked> Existing Solar Panels Locations
+    </div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.7.0/proj4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
